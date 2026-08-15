@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
- <head>
 
 <script>
 !function (w, d, t) {
@@ -635,6 +634,12 @@ footer b{color:#fff}
   const waMsg = encodeURIComponent("السلام عليكم، أرغب بطلب خدمة تكييف وأود معرفة التفاصيل والسعر 👋");
   const waBase = "https://wa.me/" + PHONE + "?text=";
 
+  // تتبّع تيك توك — نفس حدث Contact الشغال في صفحة الحجامة
+  function trackContact(label){
+    if (typeof ttq === "undefined") return;
+    ttq.track('Contact', label ? { content_name: label } : {});
+  }
+
   // روابط الواتساب (مع تخصيص الرسالة حسب الخدمة إن وُجدت)
   document.querySelectorAll(".js-wa").forEach(el=>{
     const svc = el.dataset.svc;
@@ -642,10 +647,14 @@ footer b{color:#fff}
     el.href = waBase + msg;
     el.target = "_blank";
     el.rel = "noopener";
+    el.addEventListener("click", function(){ trackContact(svc); });
   });
 
   // روابط الاتصال
-  document.querySelectorAll(".js-call").forEach(el=> el.href = "tel:+" + PHONE);
+  document.querySelectorAll(".js-call").forEach(el=>{
+    el.href = "tel:+" + PHONE;
+    el.addEventListener("click", function(){ trackContact("اتصال مباشر"); });
+  });
   document.querySelectorAll(".js-phone").forEach(el=> el.textContent = PHONE_DISPLAY);
 
   // الفورم → يرسل البيانات كرسالة واتساب جاهزة
@@ -658,6 +667,7 @@ footer b{color:#fff}
       document.getElementById("f-phone").style.borderColor = "#E05A5A";
       return;
     }
+    trackContact(svc);
     const msg = encodeURIComponent(
       "طلب جديد من صفحة الهبوط ✅\n" +
       "الاسم: " + (name || "غير مذكور") + "\n" +
