@@ -1,43 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
- <!-- 1. الكود الأساسي لقوقل (المحرك) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18424330605"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-18424330605');
-</script>
-
-<!-- 2. كود تتبع الإحالات المدمج (قوقل + تيك توك) -->
-<script>
-function gtag_report_conversion() {
-  // إرسال التحويل لقوقل
-  if (typeof gtag !== 'undefined') {
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18424330605/SyqUCJGXruwcEO3ys9FE'
-      });
-  }
-  // إرسال التحويل لتيك توك
-  if (typeof ttq !== 'undefined') {
-      ttq.track('Contact');
-  }
-}
-</script>
-
- <!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-  ttq.load('DAAJ5E3C77UEOA3OA63G');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>صيانة مكيفات بالرياض | تركيب وتنظيف وغسيل مكيفات سبليت ومركزي — أرسان المتحدة للتكييف</title>
@@ -204,6 +167,7 @@ header{
 .qualify .btn{margin-top:30px}
 
 /* ===== العرض الخاص ===== */
+/* ملحوظة: عدّل عدد "أول 20 عميل" ونسبة/تفاصيل الخصم حسب العرض الفعلي عندكم قبل النشر */
 .offer{background:linear-gradient(180deg,var(--gold-light),#fff)}
 .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:30px}
 .offer-card{background:#fff;border:2px solid var(--gold);border-radius:var(--radius);padding:28px 22px;text-align:center;box-shadow:0 14px 35px rgba(212,160,23,.12)}
@@ -351,7 +315,7 @@ footer b{color:#fff}
       <span class="flake">❄</span>
       <div>أرسان المتحدة للتكييف<small>ARSAN UNITED — AIR CONDITIONING</small></div>
     </div>
-    <a class="btn btn-call js-call" href="#" onclick="gtag_report_conversion();">
+    <a class="btn btn-call js-call" href="#">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
       <span class="js-phone">اتصل الآن</span>
     </a>
@@ -374,11 +338,11 @@ footer b{color:#fff}
         <span class="chip">📋 عقود صيانة</span>
       </div>
       <div class="hero-ctas">
-        <a class="btn btn-whatsapp js-wa" href="#" onclick="gtag_report_conversion();">
+        <a class="btn btn-whatsapp js-wa" href="#">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-.9c.2-.2.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg>
           اطلب خدمتك الآن — واتساب
         </a>
-        <a class="btn btn-call js-call" href="#" style="background:transparent;color:#fff;border-color:#fff" onclick="gtag_report_conversion();">
+        <a class="btn btn-call js-call" href="#" style="background:transparent;color:#fff;border-color:#fff">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
           اتصال مباشر
         </a>
@@ -417,7 +381,7 @@ footer b{color:#fff}
       <h2>علامات تدل إن مكيفك محتاج فني الحين</h2>
       <p>لو حسّيت بأي من هذي المشاكل، لا تأجل الصيانة — كل يوم تأخير يزيد الحمل على المكيف ويرفع فاتورتك.</p>
       <svg class="wave-divider" viewBox="0 0 80 14"><path d="M0 7 Q10 0 20 7 T40 7 T60 7 T80 7" fill="none" stroke="#2BA6DF" stroke-width="3" stroke-linecap="round"/></svg>
-    </div>
+      </div>
     <div class="problem-grid">
       <div class="problem-card"><div class="icon">🌡️</div><h3>ضعف في التبريد</h3><p>المكيف يشتغل لكن الهواء ما يبرد زي الأول أو ياخذ وقت طويل يبرّد الغرفة.</p></div>
       <div class="problem-card"><div class="icon">💧</div><h3>تنقيط مويه من الوحدة</h3><p>تسريب مياه من الوحدة الداخلية يدل غالبًا على انسداد أو مشكلة في الصرف.</p></div>
@@ -462,7 +426,7 @@ footer b{color:#fff}
       <div class="offer-card"><div class="icon">🏅</div><h3>الضمان الذهبي</h3><p>كل خدمة تحصل على ضمان مكتوب يشمل العمل وقطع الغيار.</p></div>
     </div>
     <div class="offer-cta">
-      <a class="btn btn-whatsapp js-wa" href="#" data-svc="عرض خاص - أول 20 عميل" onclick="gtag_report_conversion();">
+      <a class="btn btn-whatsapp js-wa" href="#" data-svc="عرض خاص - أول 20 عميل">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-.9c.2-.2.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg>
         احجز الآن واستفد من العرض
       </a>
@@ -483,37 +447,37 @@ footer b{color:#fff}
         <div class="icon">🔧</div>
         <h3>صيانة مكيفات بالرياض</h3>
         <p>إصلاح أعطال مكيفات السبليت والمر المركزي والمخفي والشيلر بأيدي فريق فني محترف، مع استبدال القطع التالفة بقطع أصلية مشمولة بالضمان الذهبي.</p>
-        <a href="#" class="js-wa" data-svc="صيانة مكيف" onclick="gtag_report_conversion();">اطلبها الآن ←</a>
+        <a href="#" class="js-wa" data-svc="صيانة مكيف">اطلبها الآن ←</a>
       </div>
       <div class="svc">
         <div class="icon">🏠</div>
-        <h3>تركيب مكيفات سبليت ومركزي</h3>
+        <h3>تركيب مكيفات سبليت ومر المركزي</h3>
         <p>تركيب احترافي لجميع أنواع المكيفات وبكل الأحجام وفق معايير السلامة، مع اختبار كامل للأداء قبل التسليم.</p>
-        <a href="#" class="js-wa" data-svc="تركيب مكيف" onclick="gtag_report_conversion();">اطلبها الآن ←</a>
+        <a href="#" class="js-wa" data-svc="تركيب مكيف">اطلبها الآن ←</a>
       </div>
       <div class="svc">
         <div class="icon">🧼</div>
         <h3>تنظيف وغسيل مكيفات</h3>
         <p>غسيل عميق للوحدات الداخلية والخارجية والفلاتر والدكت — يحسّن التبريد ويقلل استهلاك الكهرباء ويطيل عمر المكيف.</p>
-        <a href="#" class="js-wa" data-svc="تنظيف مكيف" onclick="gtag_report_conversion();">اطلبها الآن ←</a>
+        <a href="#" class="js-wa" data-svc="تنظيف مكيف">اطلبها الآن ←</a>
       </div>
       <div class="svc">
         <div class="icon">🔩</div>
         <h3>تمديد وتأسيس نحاس للمكيفات</h3>
         <p>تمديدات نحاس للمباني الجديدة وتحت التشطيب بخامات عالية الجودة وعزل حراري يمنع التسريب.</p>
-        <a href="#" class="js-wa" data-svc="تمديد نحاس" onclick="gtag_report_conversion();">اطلبها الآن ←</a>
+        <a href="#" class="js-wa" data-svc="تمديد نحاس">اطلبها الآن ←</a>
       </div>
       <div class="svc">
         <div class="icon">🌀</div>
         <h3>تعبئة فريون وكشف تسريب</h3>
         <p>كشف دقيق بأجهزة حديثة لمكان تسريب الفريون ومعالجته من الجذر، ثم تعبئة الفريون بالنوع المناسب لمكيفك.</p>
-        <a href="#" class="js-wa" data-svc="تعبئة فريون" onclick="gtag_report_conversion();">اطلبها الآن ←</a>
+        <a href="#" class="js-wa" data-svc="تعبئة فريون">اطلبها الآن ←</a>
       </div>
       <div class="svc">
         <div class="icon">📋</div>
         <h3>عقود صيانة دورية للمكيفات</h3>
         <p>خطط صيانة سنوية للمنازل والفلل والمنشآت تشمل الفحص والتنظيف الدوري — راحة بال طوال العام.</p>
-        <a href="#" class="js-wa" data-svc="عقد صيانة دورية" onclick="gtag_report_conversion();">اطلبها الآن ←</a>
+        <a href="#" class="js-wa" data-svc="عقد صيانة دورية">اطلبها الآن ←</a>
       </div>
     </div>
   </div>
@@ -555,7 +519,7 @@ footer b{color:#fff}
         <div><span>🔄</span>أي ملاحظة خلال فترة الضمان نعالجها مجانًا</div>
         <div><span>⚙️</span>يشمل الخدمة وقطع الغيار الأصلية</div>
       </div>
-      <a class="btn btn-whatsapp js-wa" href="#" data-svc="خدمة مع الضمان الذهبي" onclick="gtag_report_conversion();">
+      <a class="btn btn-whatsapp js-wa" href="#" data-svc="خدمة مع الضمان الذهبي">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-.9c.2-.2.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg>
         اطلب خدمتك بالضمان الذهبي
       </a>
@@ -680,7 +644,7 @@ footer b{color:#fff}
       <li><span class="check">✔</span> الضمان الذهبي 🏅 على الخدمة وقطع الغيار</li>
       <li><span class="check">✔</span> فريق فني محترف يصلك في نفس اليوم</li>
     </ul>
-    <a class="btn btn-whatsapp js-wa" href="#" onclick="gtag_report_conversion();">
+    <a class="btn btn-whatsapp js-wa" href="#">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-.9c.2-.2.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg>
       احجز الآن عبر واتساب
     </a>
@@ -702,8 +666,8 @@ footer b{color:#fff}
     <span>فريق فني محترف • الضمان الذهبي 🏅</span>
   </div>
   <div class="sb-ctas">
-    <a href="#" class="btn btn-call js-call" aria-label="اتصال مباشر" onclick="gtag_report_conversion();">📞</a>
-    <a href="#" class="btn btn-whatsapp js-wa" onclick="gtag_report_conversion();">💬 اطلب فنيك الآن</a>
+    <a href="#" class="btn btn-call js-call" aria-label="اتصال مباشر">📞</a>
+    <a href="#" class="btn btn-whatsapp js-wa">💬 اطلب فنيك الآن</a>
   </div>
 </div>
 
@@ -742,3 +706,4 @@ function showInfoTab(type,btn){
 
 </body>
 </html>
+```eof
